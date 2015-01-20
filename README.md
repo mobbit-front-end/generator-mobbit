@@ -1,47 +1,29 @@
-# generator-mobbit [![Build Status](https://secure.travis-ci.org/mobbit-frontend/generator-mobbit.png?branch=master)](https://travis-ci.org/mobbit-frontend/generator-mobbit)
+# Front-end project generator
 
-> [Yeoman](http://yeoman.io) generator
+> [Yeoman](http://yeoman.io) generator that scaffolds out a front-end project using [gulp](http://gulpjs.com/) for the build process
 
+## Features
+
+Please see our [gulpfile.js](app/templates/gulpfile.js) for up to date information on what we support.
+
+* CSS Autoprefixing
+* Built-in preview server with BrowserSync
+* Automagically compile Sass with [libsass](http://libsass.org)
+* Automagically lint your scripts
+* Awesome image optimization
+* Automagically wire-up dependencies installed with [Bower](http://bower.io)
+
+*For more information on what this generator can do for you, take a look at the [gulp plugins](app/templates/_package.json) used in our `package.json`.*
 
 ## Getting Started
 
-### What is Yeoman?
-
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
-
-```bash
-npm install -g yo
-```
-
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-mobbit from npm, run:
-
-```bash
-npm install -g generator-mobbit
-```
-
-Finally, initiate the generator:
-
-```bash
-yo mobbit
-```
-
-### Getting To Know Yeoman
-
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
-
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
+- Install dependencies: `npm install -g yo bower`
+- Install the generator: `npm install -g generator-mobbit-front-end`
+- Run `yo mobbit-front-end` to scaffold your project
+- Run `gulp dev` to preview and watch for changes
+- Run `bower install --save <package>` to install frontend dependencies
+- Run `gulp` to build your project for production
 
 ## License
 
-MIT
+[BSD license](http://opensource.org/licenses/bsd-license.php)
